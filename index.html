@@ -52,25 +52,71 @@
         <div class="max-w-6xl mx-auto">
             <h2 class="text-sm text-gray-400 font-semibold mb-3">MANFAAT</h2>
             <h3 class="text-3xl font-bold mb-10 text-gray-800">
-                Manfaat Konsumsi <span class="text-green-600">Bropolis</span>
+                Manfaat Konsumsi <span class="text-green-600">Herbaship</span>
             </h3>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
                 <div class="bg-white shadow rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-2">Menurunkan Kolesterol</h4>
-                    <p class="text-sm text-gray-600">Membantu menstabilkan kadar kolesterol jahat dalam tubuh.</p>
+                    <div class="flex items-start mb-4">
+                        <div class="text-green-600 mr-3 text-2xl">
+                            🌿
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-1">Suplemen Nutrisi</h4>
+                            <p class="text-sm text-gray-600">
+                                Terutama bagi mereka yang memiliki gaya hidup yang sibuk atau kekurangan nutrisi
+                                tertentu.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="bg-white shadow rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-2">Meningkatkan Imunitas</h4>
-                    <p class="text-sm text-gray-600">Propolis murni memperkuat daya tahan tubuh Anda.</p>
+                    <div class="flex items-start mb-4">
+                        <div class="text-green-600 mr-3 text-2xl">
+                            🌿
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-1">Penambah Nafsu Makan</h4>
+                            <p class="text-sm text-gray-600">
+                                Memberikan alternatif cepat dan mudah untuk persiapan makanan yang sehat, cocok untuk
+                                gaya hidup yang sibuk.
+                            </p>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="bg-white shadow rounded-lg p-6">
-                    <h4 class="text-lg font-semibold mb-2">Melancarkan Peredaran Darah</h4>
-                    <p class="text-sm text-gray-600">Membantu menjaga sirkulasi darah tetap sehat dan lancar.</p>
+                    <div class="flex items-start mb-4">
+                        <div class="text-green-600 mr-3 text-2xl">
+                            🌿
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-1">Pengelolaan Gula Darah</h4>
+                            <p class="text-sm text-gray-600">
+                                Diakui memiliki formulasi yang dapat membantu dalam pengelolaan gula darah.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow rounded-lg p-6">
+                    <div class="flex items-start mb-4">
+                        <div class="text-green-600 mr-3 text-2xl">
+                            🌿
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-1">Energi dan Kebugaran</h4>
+                            <p class="text-sm text-gray-600">
+                                Bagi mereka yang aktif secara fisik atau menginginkan dorongan energi tambahan.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Kandungan -->
     <!-- Kandungan Stevi -->
@@ -82,23 +128,27 @@
             </h3>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 items-center max-w-6xl mx-auto">
+        <!-- Grid untuk desktop -->
+        <div class="hidden md:grid md:grid-cols-3 gap-6 items-start max-w-6xl mx-auto">
+            <!-- Kolom kiri -->
             <div class="space-y-6">
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Stevia</h4>
                     <p class="text-sm text-gray-600">Pemanis alami tanpa kalori, baik untuk penderita diabetes.</p>
                 </div>
                 <div class="bg-white shadow-md rounded-xl p-6">
-                    <h4 class="text-lg font-bold mb-2">glikosida</h4>
+                    <h4 class="text-lg font-bold mb-2">Glikosida</h4>
                     <p class="text-sm text-gray-600">Glikosida steviol adalah senyawa alami yang diekstrak dari daun
-                        tanaman stevia. </p>
+                        tanaman stevia.</p>
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <img src="assets/styles/bp2.jpg" alt="Stevi" class="w-72" />
+            <!-- Gambar di tengah (desktop only) -->
+            <div class="flex justify-center items-center">
+                <img src="assets/styles/bp2.jpg" alt="Stevi" class="w-72 rounded-xl shadow-md" />
             </div>
 
+            <!-- Kolom kanan -->
             <div class="space-y-6">
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Pemanis Alami</h4>
@@ -111,7 +161,37 @@
                 </div>
             </div>
         </div>
+
+        <!-- Gambar bawah (mobile only) -->
+        <div class="block md:hidden mt-10 flex justify-center">
+            <img src="assets/styles/bp2.jpg" alt="Stevi" class="w-72 rounded-xl shadow-md" />
+        </div>
+
+        <!-- Konten mobile (stacked) -->
+        <div class="md:hidden max-w-xl mx-auto mt-6 space-y-6">
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Stevia</h4>
+                <p class="text-sm text-gray-600">Pemanis alami tanpa kalori, baik untuk penderita diabetes.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Glikosida</h4>
+                <p class="text-sm text-gray-600">Glikosida steviol adalah senyawa alami yang diekstrak dari daun tanaman
+                    stevia.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Pemanis Alami</h4>
+                <p class="text-sm text-gray-600">Stevia adalah pemanis alami yang berasal dari daun tanaman Stevia
+                    rebaudiana.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Serat Alami</h4>
+                <p class="text-sm text-gray-600">Membantu sistem pencernaan lebih lancar.</p>
+            </div>
+        </div>
     </section>
+
+
+
 
     <!-- Kandungan Norwey -->
     <section class="py-20 bg-white" id="kandungan-norwey">
@@ -122,26 +202,32 @@
             </h3>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 items-center max-w-6xl mx-auto">
+        <!-- Grid untuk desktop -->
+        <div class="hidden md:grid md:grid-cols-3 gap-6 items-start max-w-6xl mx-auto">
+            <!-- Kolom kiri -->
             <div class="space-y-6">
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">DHA (Docosahexaenoic Acid)</h4>
                     <p class="text-sm text-gray-600">
                         DHA adalah asam lemak omega-3 yang penting untuk perkembangan otak dan fungsi kognitif, terutama
-                        pada anak-anak.</p>
+                        pada anak-anak.
+                    </p>
                 </div>
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Minyak Ikan Salmon Atlantik Omega-3</h4>
                     <p class="text-sm text-gray-600">
-                        Minyak ikan salmon ini merupakan sumber alami omega-3 yang sangat baik untuk kesehatan
-                        jantung, otak, dan mata.</p>
+                        Minyak ikan salmon ini merupakan sumber alami omega-3 yang sangat baik untuk kesehatan jantung,
+                        otak, dan mata.
+                    </p>
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <img src="assets/styles/bp5.jpg" alt="Norwey" class="w-72" />
+            <!-- Gambar di tengah hanya untuk desktop -->
+            <div class="flex justify-center items-center">
+                <img src="assets/styles/bp5.jpg" alt="Norwey" class="w-72 rounded-xl shadow-md" />
             </div>
 
+            <!-- Kolom kanan -->
             <div class="space-y-6">
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Minyak Ikan Murni</h4>
@@ -151,6 +237,37 @@
                     <h4 class="text-lg font-bold mb-2">Antioksidan</h4>
                     <p class="text-sm text-gray-600">Melindungi sel dari kerusakan radikal bebas.</p>
                 </div>
+            </div>
+        </div>
+
+        <!-- Gambar di bawah hanya untuk mobile -->
+        <div class="block md:hidden mt-10 flex justify-center">
+            <img src="assets/styles/bp5.jpg" alt="Norwey" class="w-72 rounded-xl shadow-md" />
+        </div>
+
+        <!-- Konten mobile (stacked) -->
+        <div class="md:hidden max-w-xl mx-auto mt-6 space-y-6">
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">DHA (Docosahexaenoic Acid)</h4>
+                <p class="text-sm text-gray-600">
+                    DHA adalah asam lemak omega-3 yang penting untuk perkembangan otak dan fungsi kognitif, terutama
+                    pada anak-anak.
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Minyak Ikan Salmon Atlantik Omega-3</h4>
+                <p class="text-sm text-gray-600">
+                    Minyak ikan salmon ini merupakan sumber alami omega-3 yang sangat baik untuk kesehatan jantung,
+                    otak, dan mata.
+                </p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Minyak Ikan Murni</h4>
+                <p class="text-sm text-gray-600">Diperoleh dari laut Norwegia yang bersih dan murni.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Antioksidan</h4>
+                <p class="text-sm text-gray-600">Melindungi sel dari kerusakan radikal bebas.</p>
             </div>
         </div>
     </section>
@@ -164,30 +281,32 @@
             </h3>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 items-center max-w-6xl mx-auto">
+        <!-- Grid desktop -->
+        <div class="hidden md:grid md:grid-cols-3 gap-6 items-start max-w-6xl mx-auto">
+            <!-- Kolom kiri -->
             <div class="space-y-6">
-
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Cocamidopropyl Betaine</h4>
-                    <p class="text-sm text-gray-600"> Surfaktan amfoterik yang membersihkan sekaligus melembutkan kulit.
+                    <p class="text-sm text-gray-600">Surfaktan amfoterik yang membersihkan sekaligus melembutkan kulit.
                     </p>
                 </div>
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Hyaluronic Acid</h4>
-                    <p class="text-sm text-gray-600">
-                        Bahan yang mampu mengikat air dan menjaga kelembapan kulit, membuatnya terasa lebih kenyal.
-                    </p>
+                    <p class="text-sm text-gray-600">Bahan yang mampu mengikat air dan menjaga kelembapan kulit,
+                        membuatnya terasa lebih kenyal.</p>
                 </div>
             </div>
 
-            <div class="flex justify-center">
-                <img src="assets/styles/bp3.jpg" alt="Facial Wash" class="w-72" />
+            <!-- Gambar tengah (desktop only) -->
+            <div class="flex justify-center items-center">
+                <img src="assets/styles/bp3.jpg" alt="Facial Wash" class="w-72 rounded-xl shadow-md" />
             </div>
 
+            <!-- Kolom kanan -->
             <div class="space-y-6">
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Allantoin</h4>
-                    <p class="text-sm text-gray-600"> Bahan yang membantu menenangkan kulit dan mengurangi iritasi.</p>
+                    <p class="text-sm text-gray-600">Bahan yang membantu menenangkan kulit dan mengurangi iritasi.</p>
                 </div>
                 <div class="bg-white shadow-md rounded-xl p-6">
                     <h4 class="text-lg font-bold mb-2">Salicylic Acid</h4>
@@ -195,7 +314,34 @@
                 </div>
             </div>
         </div>
+
+        <!-- Gambar mobile -->
+        <div class="block md:hidden mt-10 flex justify-center">
+            <img src="assets/styles/bp3.jpg" alt="Facial Wash" class="w-72 rounded-xl shadow-md" />
+        </div>
+
+        <!-- Konten mobile -->
+        <div class="md:hidden max-w-xl mx-auto mt-6 space-y-6">
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Cocamidopropyl Betaine</h4>
+                <p class="text-sm text-gray-600">Surfaktan amfoterik yang membersihkan sekaligus melembutkan kulit.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Hyaluronic Acid</h4>
+                <p class="text-sm text-gray-600">Bahan yang mampu mengikat air dan menjaga kelembapan kulit, membuatnya
+                    terasa lebih kenyal.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Allantoin</h4>
+                <p class="text-sm text-gray-600">Bahan yang membantu menenangkan kulit dan mengurangi iritasi.</p>
+            </div>
+            <div class="bg-white shadow-md rounded-xl p-6">
+                <h4 class="text-lg font-bold mb-2">Salicylic Acid</h4>
+                <p class="text-sm text-gray-600">Mengangkat sel kulit mati dan mencegah komedo.</p>
+            </div>
+        </div>
     </section>
+
 
 
     <!-- CTA -->
